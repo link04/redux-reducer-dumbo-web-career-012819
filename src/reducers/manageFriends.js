@@ -12,9 +12,9 @@ export function manageFriends(state, action){
    case 'REMOVE_FRIEND' :
       let stateCopy = {...state };
       if (action.id !== undefined){
-          stateCopy.friends.filter(friend => 
+        stateCopy.friends.filter(friend => 
          friend.id === 
-      )
+        )
       } 
     
       return stateCopy;
