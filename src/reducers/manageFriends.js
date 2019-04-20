@@ -5,10 +5,9 @@ export function manageFriends(state, action){
       let stateCopy = {
         ...state
       };
-      stateCopy.friends = {
-        ...stateCopy.friends
-        ,
-      }
+      stateCopy.friends.push(
+        {name: action.friend.name, hometown: action.friend.hometown, id: action.friend.id }
+        )
       return 
     default:state
     
