@@ -9,7 +9,7 @@ export function manageFriends(state, action){
         ...stateCopy.friends
         ,
       }
-      return Object.assign({}, state, state.friends = [...state.friends, {name: action.friend.name, hometown: action.friend.hometown, id: action.friend.id }])
+      return 
     default:state
     
   }
