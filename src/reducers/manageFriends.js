@@ -9,6 +9,8 @@ export function manageFriends(state, action){
     return stateCopy.friends.filter(friend => 
       friend.id === action.id
      )
+   
+      return stateCopy;
   
     default:
       return state
