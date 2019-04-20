@@ -11,7 +11,9 @@ export function manageFriends(state, action){
       
    case 'REMOVE_FRIEND' :
       let stateCopy = {...state };
-      stateCopy.friends.filter
+      stateCopy.friends.filter(friend => 
+        
+      )
       return stateCopy;
       
     default :
