@@ -6,11 +6,9 @@ export function manageFriends(state, action){
       stateCopy.friends.push({name: action.friend.name, hometown: action.friend.hometown, id: action.friend.id })
       return stateCopy;
    case 'REMOVE_FRIEND':
-    stateCopy.friends = stateCopy.friends.filter(friend => 
+    return stateCopy.friends.filter(friend => 
       friend.id === action.id
      )
-   
-      return stateCopy;
   
     default:
       return state
