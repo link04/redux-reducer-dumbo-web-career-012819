@@ -3,7 +3,7 @@ export function managePresents(state, action){
   switch(action.type){
     
     case 'INCREASE':
-      newState = { ...state };
+      let newState = { ...state };
       newState.numberOfPresents++;
       return newState;
     
