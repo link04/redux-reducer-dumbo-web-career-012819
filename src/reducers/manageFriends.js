@@ -15,7 +15,7 @@ export function manageFriends(state, action){
         friend.id === action.id
       )
       return stateCopy;
-      
+      break;
     default:
       return state
     
