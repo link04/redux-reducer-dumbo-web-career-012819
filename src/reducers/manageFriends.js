@@ -8,7 +8,7 @@ export function manageFriends(state, action){
       stateCopy.friends.push(
         {name: action.friend.name, hometown: action.friend.hometown, id: action.friend.id }
         )
-      return 
+      return stateCopy;
     default:state
     
   }
