@@ -3,7 +3,7 @@ export function manageFriends(state, action){
   let stateCopy = {...state };
   switch(action.type){
     case 'ADD_FRIEND':
-      stateCopy.friends.push({ hometown: action.friend.hometown name: action.friend.name , id: action.friend.id  })
+      stateCopy.friends.push({ hometown: action.friend.hometown , id: action.friend.id  })
       return stateCopy;
    case 'REMOVE_FRIEND':
     const result = stateCopy.friends.filter(friend => 
