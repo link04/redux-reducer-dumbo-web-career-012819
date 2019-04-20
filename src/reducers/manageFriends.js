@@ -1,5 +1,4 @@
 export function manageFriends(state, action){
-  
   switch(action.type){
     case 'ADD_FRIEND' :
       let stateCopy = {...state };
@@ -7,11 +6,9 @@ export function manageFriends(state, action){
       return stateCopy;
    case 'REMOVE_FRIEND' :
       let stateCopy = {...state };
-    
       return stateCopy.friends;
       break;
     default:
       return state
-    
   }
 }
