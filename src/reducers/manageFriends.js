@@ -16,7 +16,7 @@ export function manageFriends(state, action){
       )
       return stateCopy;
       
-    default 
+    default:
     return state
     
   }
