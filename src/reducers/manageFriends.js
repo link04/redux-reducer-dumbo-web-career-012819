@@ -7,7 +7,7 @@ export function manageFriends(state, action){
       return stateCopy;
    case 'REMOVE_FRIEND':
     const result = stateCopy.friends.filter(friend => 
-      friend.id === action.id
+      friend.id !== action.id
      )
     stateCopy.friends = result;
       return stateCopy;
