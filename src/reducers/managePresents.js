@@ -5,7 +5,7 @@ export function managePresents(state, action){
     case 'INCREASE':
       let newState = state;
       newState.numberOfPresents++;
-      return newState};
+      return newState;
     
     default:
       return state;
