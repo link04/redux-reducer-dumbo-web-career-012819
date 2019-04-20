@@ -9,7 +9,7 @@ export function manageFriends(state, action){
     const result = stateCopy.friends.filter(friend => 
       friend.id === action.id
      )
-    stateCopy.friends
+    stateCopy.friends = 
       return stateCopy;
   
     default:
