@@ -9,13 +9,7 @@ export function manageFriends(state, action){
         )
       return stateCopy;
       break;
-   case 'REMOVE_FRIEND' :
-      let stateCopy = {...state };
-      stateCopy.friends.filter(friend => 
-      
-      )
-      return stateCopy;
-      break;
+
     default:
       return state
     
