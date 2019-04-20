@@ -7,7 +7,7 @@ export function manageFriends(state, action){
    case 'REMOVE_FRIEND' :
       let stateCopy = {...state };
       return stateCopy.friends;
-      break;
+  
     default:
       return state
   }
